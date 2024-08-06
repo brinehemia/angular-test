@@ -17,7 +17,7 @@ export class AdminComponent implements OnInit {
   constructor(private apiService: ApiService) {}
 
   ngOnInit(): void {
-    this.apiService.getData().subscribe(
+    this.apiService.Get("DynamicContents/CountryAreaCode").subscribe(
       response => {
         console.log('API Response:', response);
       },
